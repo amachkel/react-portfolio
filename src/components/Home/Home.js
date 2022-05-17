@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import LogoTitle from '../../assets/images/Alex-logo_white.png'
+import Avatar from '../../assets/images/avatar.jpg'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './Home.scss'
 
@@ -35,7 +36,7 @@ export default function Home() {
           <span className={`${letterClass} _13`}>I</span>
           <span className={`${letterClass} _14`}>'m</span>
 
-          <img src={LogoTitle} alt="developer" />
+          <img className="logo-img" src={LogoTitle} alt="Alex" />
           <br />
           <AnimatedLetters
             letterClass={letterClass}
@@ -47,6 +48,9 @@ export default function Home() {
         <Link to="/contact" className="flat-button">
           Let's get in touch!
         </Link>
+      </div>
+      <div className="img-zone">
+        <img className="avatar-img" src={Avatar} alt="Alex" />
       </div>
     </div>
   )

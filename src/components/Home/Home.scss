@@ -32,7 +32,7 @@
       opacity: 0.6;
     }
 
-    img {
+    .logo-img {
       width: 145px;
       margin-top: -32px;
       margin-bottom: -38px;
@@ -41,6 +41,20 @@
       animation: rotateIn 1s linear both;
       animation-delay: 1.4s;
     }
+  }
+
+  .img-zone {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    animation: fadeIn 2s backwards;
+    animation-delay: 3.5s;
+  }
+
+  .avatar-img {
+    box-shadow: 0px 0px 20px 0px lightgrey;
+    border-radius: 50%;
+    border: 1px solid #475569;
   }
 
   h2 {
@@ -64,6 +78,7 @@
     float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
       background: #4ef2eb;
