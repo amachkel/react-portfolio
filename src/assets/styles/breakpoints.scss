@@ -1,0 +1,109 @@
+$breakpoints: (
+  'xxs': 0,
+  'xs': 320px,
+  'sm': 480px,
+  'md': 720px,
+  'lg': 912px,
+  'xl': 1200px,
+  'xxl': 1440px,
+);
+
+@mixin xxs {
+  @media (min-width: map-get($breakpoints, 'xxs')) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, 'xs')) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: map-get($breakpoints, 'sm')) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($breakpoints, 'md')) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, 'lg')) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: map-get($breakpoints, 'xl')) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: map-get($breakpoints, 'xxl')) {
+    @content;
+  }
+}
+
+.nav-bar {
+  @include md {
+    display: block;
+  }
+}
+
+.responsive-burger {
+  @include md {
+    display: none;
+  }
+  //   @include
+}
+
+.responsive-img {
+  @include xs {
+    max-width: 300px;
+  }
+  @include lg {
+    max-width: 450px;
+  }
+}
+
+.responsive-cont {
+  @include xxs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @include lg {
+    flex-direction: row;
+  }
+}
+
+.responsive-logo {
+  @include md {
+    width: 120px;
+    margin-bottom: -58px;
+  }
+}
+
+.responsive-text {
+  @include xs {
+    font-size: 24px;
+  }
+  @include md {
+    font-size: 54px;
+  }
+}
+
+.responsive-button {
+  @include xxs {
+    display: none;
+  }
+  @include md {
+    display: block;
+  }
+}

@@ -1,0 +1,21 @@
+.hamburger {
+  display: none;
+}
+
+.responsive-burger {
+  display: block;
+
+  z-index: 10;
+  position: absolute;
+  margin: 18px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #4ef2eb;
+}

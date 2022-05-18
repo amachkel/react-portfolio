@@ -37,6 +37,11 @@
     color: #fff;
     padding: 0 20px;
     box-sizing: border-box;
+    &:focus {
+      opacity: 0.8;
+      border: 1px solid #ccc;
+      //   box-shadow: 0px 0px 20px 0px lightgrey;
+    }
   }
 
   textarea {

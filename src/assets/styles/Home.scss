@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    // border: 1px solid white;
   }
 
   .flex-wrapper {
@@ -15,7 +16,7 @@
 
   h1 {
     color: #fff;
-    font-size: 54px;
+
     margin: 0;
 
     // &::before {
@@ -40,8 +41,8 @@
 
     .logo-img {
       width: 145px;
-      margin-top: -32px;
-      margin-bottom: -38px;
+      margin-top: -80px;
+      margin-bottom: -25px;
       opacity: 0;
       height: auto;
       animation: rotateIn 1s linear both;
@@ -50,9 +51,12 @@
   }
 
   .img-zone {
-    position: absolute;
-    right: 5%;
-    top: 25%;
+    // border: 1px solid white;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     animation: fadeIn 2s backwards;
     animation-delay: 3.5s;
   }
@@ -81,6 +85,7 @@
     padding: 10px 18px;
     border: 2px inset #8d8d8d;
     margin-top: 25px;
+    margin-bottom: 25px;
     max-width: fit-content;
     animation: fadeIn 1s 1.8s backwards;
     transition: all 0.3s ease-in-out;

@@ -1,7 +1,7 @@
 import React from 'react'
-import './Sidebar.scss'
+import '../assets/styles/index.scss'
 import { Link, NavLink } from 'react-router-dom'
-import Logo from '../../assets/images/Alex-logo.png'
+import Logo from '../assets/images/Alex-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
