@@ -1,10 +1,10 @@
-.hamburger {
-  display: none;
+button.hamburger {
+  background: none;
+  border: none;
 }
 
 .responsive-burger {
   display: block;
-
   z-index: 10;
   position: absolute;
   margin: 18px;
