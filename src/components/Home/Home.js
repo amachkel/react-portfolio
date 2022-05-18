@@ -29,25 +29,27 @@ export default function Home() {
   return (
     <div className="container home-page">
       <div className="text-zone">
-        <h1>
-          <span className={letterClass}>H</span>
-          <span className={`${letterClass} _12`}>i,</span>
-          <br />
-          <span className={`${letterClass} _13`}>I</span>
-          <span className={`${letterClass} _14`}>'m</span>
+        <div className="flex-wrapper">
+          <h1>
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _12`}>i,</span>
+            <br />
+            <span className={`${letterClass} _13`}>I</span>
+            <span className={`${letterClass} _14`}>'m</span>
 
-          <img className="logo-img" src={LogoTitle} alt="Alex" />
-          <br />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={jobArray}
-            index={15}
-          />
-        </h1>
-        <h2>MERN Stack Developer / JavaScript Ninja / Woman In Tech</h2>
-        <Link to="/contact" className="flat-button">
-          Let's get in touch!
-        </Link>
+            <img className="logo-img" src={LogoTitle} alt="Alex" />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={jobArray}
+              index={15}
+            />
+          </h1>
+          <h2>MERN Stack Developer / Woman In Tech</h2>
+          <Link to="/contact" className="flat-button">
+            Let's get in touch!
+          </Link>
+        </div>
       </div>
       <div className="img-zone">
         <img className="avatar-img" src={Avatar} alt="Alex" />
