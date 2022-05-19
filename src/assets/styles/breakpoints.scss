@@ -56,12 +56,6 @@ $breakpoints: (
   }
 }
 
-// .responsive-burger {
-//   @include md {
-//     display: none;
-//   }
-// }
-
 .responsive-img {
   @include xs {
     max-width: 300px;
@@ -104,5 +98,11 @@ $breakpoints: (
   }
   @include md {
     display: block;
+  }
+}
+
+.slide img {
+  @include md {
+    width: 40rem;
   }
 }

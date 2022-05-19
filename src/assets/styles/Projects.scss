@@ -1,0 +1,51 @@
+.slider {
+  height: 570px;
+  margin: auto;
+  width: 50%;
+
+  //   img {
+  //     max-width: 300px;
+  //     max-height: 300px;
+  //   }
+}
+
+.slide img {
+  width: 30rem;
+  margin: 0 auto;
+}
+
+.slide {
+  transform: scale(0.2);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+
+.activeSlide {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.arrow {
+  //   background-color: white;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 36px;
+}
+
+.arrow svg {
+  transition: color 300ms;
+  &:hover {
+    color: #4ef2eb;
+  }
+}
+
+.next {
+  right: 0%;
+  top: 50%;
+}
+
+.prev {
+  left: 0%;
+  top: 50%;
+}
