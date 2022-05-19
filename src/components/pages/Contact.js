@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import '../assets/styles/index.scss'
-import AnimatedLetters from './AnimatedLetters'
+import '../../assets/styles/index.scss'
+import AnimatedLetters from '../AnimatedLetters'
 
 export default function Contact() {
   const [letterClass, setLetterClass] = useState('text-animate')

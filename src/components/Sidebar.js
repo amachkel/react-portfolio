@@ -16,7 +16,7 @@ export default function Sidebar() {
       <Link className="logo" to="/">
         <img src={Logo} alt="Alex logo" />
       </Link>
-      <nav>
+      <nav className="sidebar">
         <NavLink exact="true" activateclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
@@ -37,7 +37,7 @@ export default function Sidebar() {
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
       </nav>
-      <ul>
+      <ul className="sidebar-list">
         <li>
           <a
             target="_blank"

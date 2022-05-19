@@ -51,16 +51,16 @@ $breakpoints: (
 }
 
 .nav-bar {
-  @include sm {
+  @include md {
     display: block;
   }
 }
 
-.responsive-burger {
-  @include sm {
-    display: none;
-  }
-}
+// .responsive-burger {
+//   @include md {
+//     display: none;
+//   }
+// }
 
 .responsive-img {
   @include xs {

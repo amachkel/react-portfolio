@@ -1,4 +1,4 @@
-import '../assets/styles/index.scss'
+import '../../assets/styles/index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCss3,
@@ -9,7 +9,7 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import React, { useState } from 'react'
-import AnimatedLetters from './AnimatedLetters'
+import AnimatedLetters from '../AnimatedLetters'
 
 export default function About() {
   const [letterClass, setLetterClass] = useState('text-animate')
