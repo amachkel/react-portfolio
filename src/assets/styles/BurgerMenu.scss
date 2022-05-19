@@ -11,10 +11,6 @@
   position: absolute;
   z-index: 1;
 
-  // .navBurgerWrapper {
-  //   padding-top: 5vh;
-  // }
-
   .navBurger {
     color: #fff;
     font-size: 22px;
@@ -43,6 +39,19 @@
   }
   li {
     margin-top: 20px;
+  }
+
+  a {
+    i {
+      transition: all 0.3s ease-out;
+    }
+
+    &:hover {
+      color: #4ef2eb;
+      svg {
+        color: #000000;
+      }
+    }
   }
 }
 

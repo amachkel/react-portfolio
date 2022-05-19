@@ -11,14 +11,7 @@ export default function Layout() {
     <div className="App">
       <Sidebar />
       <BurgerMenu isOpen={isOpen} setOpen={setOpen} />
-      <Hamburger
-        toggled={isOpen}
-        toggle={setOpen}
-        // onClick={() => {
-        //   isOpen ? setOpen(!isOpen) : setOpen(isOpen)
-        //   console.log(isOpen)
-        // }}
-      />
+      <Hamburger toggled={isOpen} toggle={setOpen} />
       <div className="page">
         <Outlet />
       </div>

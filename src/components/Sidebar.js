@@ -8,7 +8,12 @@ import {
   faGithub,
   faCodepen,
 } from '@fortawesome/free-brands-svg-icons'
-import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {
+  faHome,
+  faUser,
+  faEnvelope,
+  faLaptopCode,
+} from '@fortawesome/free-solid-svg-icons'
 
 export default function Sidebar() {
   return (
@@ -27,6 +32,14 @@ export default function Sidebar() {
           to="/about"
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activateclassname="active"
+          className="projects-link"
+          to="/projects"
+        >
+          <FontAwesomeIcon icon={faLaptopCode} color="#4d4d4e" />
         </NavLink>
         <NavLink
           exact="true"

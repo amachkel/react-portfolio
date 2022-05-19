@@ -29,7 +29,6 @@ export default function BurgerMenu({ isOpen, setOpen }) {
               <NavLink
                 exact="true"
                 onClick={() => setOpen(!isOpen)}
-                //   activateclassname="active"
                 className="about-link navBurger"
                 to="/about"
               >
@@ -38,7 +37,14 @@ export default function BurgerMenu({ isOpen, setOpen }) {
               <NavLink
                 exact="true"
                 onClick={() => setOpen(!isOpen)}
-                //   activateclassname="active"
+                className="projects-link navBurger"
+                to="/projects"
+              >
+                PROJECTS
+              </NavLink>
+              <NavLink
+                exact="true"
+                onClick={() => setOpen(!isOpen)}
                 className="contact-link navBurger"
                 to="/contact"
               >
