@@ -71,7 +71,7 @@ $breakpoints: (
     justify-content: center;
     align-items: center;
   }
-  @include lg {
+  @include md {
     flex-direction: row;
   }
 }
@@ -104,5 +104,21 @@ $breakpoints: (
 .slide img {
   @include md {
     width: 40rem;
+  }
+}
+.carousel-zone {
+  // top height
+  @include md {
+    width: 50vw;
+    height: 90vh;
+    .slider {
+      width: 50vw;
+      height: 90vh;
+    }
+    //bottom height
+    .slick-list {
+      padding: 0px;
+      height: 80vh !important;
+    }
   }
 }

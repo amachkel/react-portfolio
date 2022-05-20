@@ -1,12 +1,33 @@
 .slider {
-  height: 570px;
+  height: 400px;
   margin: auto;
-  width: 50%;
+}
 
-  //   img {
-  //     max-width: 300px;
-  //     max-height: 300px;
-  //   }
+.project-text-zone {
+  display: flex;
+  width: 30vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0%;
+}
+
+.carousel-zone {
+  width: 100vw;
+  height: 70vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //   border: 1px solid white;
+  margin-bottom: 20px;
+  .slider {
+    width: 95vw;
+    // border: 2px solid yellow;
+  }
+  .slick-list {
+    padding: 0px;
+    height: 60vh !important;
+  }
 }
 
 .slide img {
@@ -15,14 +36,18 @@
 }
 
 .slide {
-  transform: scale(0.2);
-  transition: transform 300ms;
+  transform: scale(0.8);
+  transition: transform 500ms;
   opacity: 0.5;
 }
 
 .activeSlide {
-  transform: scale(1.1);
+  transform: scale(1);
   opacity: 1;
+  img {
+    border: 1px solid lightgrey;
+    box-shadow: 0px 0px 20px 0px lightgrey;
+  }
 }
 
 .arrow {
@@ -34,9 +59,10 @@
 }
 
 .arrow svg {
-  transition: color 300ms;
+  transition: color 500ms;
+  color: #4ef2eb;
   &:hover {
-    color: #4ef2eb;
+    color: #475569;
   }
 }
 

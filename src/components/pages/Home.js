@@ -10,20 +10,23 @@ export default function Home() {
   const jobArray = [
     'a',
     ' ',
-    'w',
-    'e',
-    'b',
-    ' ',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
+    's',
     'o',
-    'p',
+    'f',
+    't',
+    'w',
+    'a',
+    'r',
+    'e',
+    ' ',
+    'e',
+    'n',
+    'g',
+    'i',
+    'n',
+    'e',
     'e',
     'r',
-    '.',
   ]
 
   return (
@@ -50,7 +53,7 @@ export default function Home() {
               className="responsive-text"
             />
           </h1>
-          <h2>MERN Stack Developer / Woman In Tech</h2>
+          <h2>Responsive Design / MERN Stack Developer / Woman In Tech</h2>
           <Link to="/contact" className="flat-button responsive-button">
             Let's get in touch!
           </Link>

@@ -30,7 +30,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="container contact-page">
+      <div className="container contact-page responsive-cont">
         <div className="text-zone">
           <h1>
             <AnimatedLetters

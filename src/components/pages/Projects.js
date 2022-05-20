@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../../assets/styles/index.scss'
+import AnimatedLetters from '../AnimatedLetters'
 import Slider from 'react-slick'
 import candyCrush from '../../assets/thumbnails/candy-crush.png'
 import gaHikes from '../../assets/thumbnails/ga-hikes.png'
@@ -11,8 +12,8 @@ import weatherDashboard from '../../assets/thumbnails/weatherDashboard.png'
 import rockPaperScissors from '../../assets/thumbnails/rock-paper-scissors.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faCircleArrowLeft,
-  faCircleArrowRight,
+  faCircleArrowDown,
+  faCircleArrowUp,
 } from '@fortawesome/free-solid-svg-icons'
 
 const images = [
@@ -27,17 +28,18 @@ const images = [
 ]
 
 export default function Projects() {
+  const [letterClass, setLetterClass] = useState('text-animate')
   const NextArrow = ({ onClick }) => {
     return (
       <div className="arrow next" onClick={onClick}>
-        <FontAwesomeIcon icon={faCircleArrowRight} color="#fff" />
+        <FontAwesomeIcon icon={faCircleArrowUp} color="#fff" />
       </div>
     )
   }
   const PrevArrow = ({ onClick }) => {
     return (
       <div className="arrow prev" onClick={onClick}>
-        <FontAwesomeIcon icon={faCircleArrowLeft} color="#fff" />
+        <FontAwesomeIcon icon={faCircleArrowDown} color="#fff" />
       </div>
     )
   }
@@ -47,25 +49,44 @@ export default function Projects() {
   const settings = {
     infinite: true,
     lazyLoad: true,
-    speed: 300,
+    // speed: 500,
     slidesToShow: 3,
     centerMode: true,
     centerPadding: 0,
     initialSlide: 0,
+    dots: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    vertical: true,
+    verticalSwiping: true,
+    swipeToSlide: true,
+    // autoplay: true,
+    // speed: 2000,
+    // autoplaySpeed: 2000,
+    // cssEase: 'linear',
     beforeChange: (current, next) => setImageIndex(next),
   }
   return (
-    <div className="container projects-page">
-      <div className="slider">
-        <Slider {...settings}>
-          {images.map((img, i) => (
-            <div className={i === imageIndex ? 'slide activeSlide' : 'slide'}>
-              <img src={img} alt={'image'} />
-            </div>
-          ))}
-        </Slider>
+    <div className="container projects-page responsive-cont">
+      <div className="project-text-zone">
+        <h1>
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={['M', 'y', ' ', 'P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
+            index={15}
+          />
+        </h1>
+      </div>
+      <div className="carousel-zone">
+        <div className="slider">
+          <Slider {...settings}>
+            {images.map((img, i) => (
+              <div className={i === imageIndex ? 'slide activeSlide' : 'slide'}>
+                <img src={img} alt={'project'} />
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   )
