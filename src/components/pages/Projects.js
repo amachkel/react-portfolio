@@ -14,17 +14,59 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCircleArrowDown,
   faCircleArrowUp,
+  faDisplay,
 } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const images = [
-  candyCrush,
-  gaHikes,
-  hardbackLife,
-  codeQuiz,
-  teamProfile,
-  techBlog,
-  weatherDashboard,
-  rockPaperScissors,
+  {
+    image: candyCrush,
+    repo: 'https://github.com/amachkel/react-candy-crush',
+    link: 'https://amachkel.github.io/react-candy-crush/',
+    desc: 'A desktop version of Candy Crush build with React.',
+  },
+  {
+    image: gaHikes,
+    repo: 'https://github.com/amachkel/react-candy-crush',
+    link: 'https://amachkel.github.io/react-candy-crush/',
+    desc: 'A desktop version of Candy Crush build with React.',
+  },
+  {
+    image: hardbackLife,
+    repo: 'https://github.com/amachkel/react-candy-crush',
+    link: 'https://amachkel.github.io/react-candy-crush/',
+    desc: 'A desktop version of Candy Crush build with React.',
+  },
+  {
+    image: codeQuiz,
+    repo: 'https://github.com/amachkel/react-candy-crush',
+    link: 'https://amachkel.github.io/react-candy-crush/',
+    desc: 'A desktop version of Candy Crush build with React.',
+  },
+  {
+    image: teamProfile,
+    repo: 'https://github.com/amachkel/react-candy-crush',
+    link: 'https://amachkel.github.io/react-candy-crush/',
+    desc: 'A desktop version of Candy Crush build with React.',
+  },
+  {
+    image: techBlog,
+    repo: 'https://github.com/amachkel/react-candy-crush',
+    link: 'https://amachkel.github.io/react-candy-crush/',
+    desc: 'A desktop version of Candy Crush build with React.',
+  },
+  {
+    image: weatherDashboard,
+    repo: 'https://github.com/amachkel/react-candy-crush',
+    link: 'https://amachkel.github.io/react-candy-crush/',
+    desc: 'A desktop version of Candy Crush build with React.',
+  },
+  {
+    image: rockPaperScissors,
+    repo: 'https://github.com/amachkel/react-candy-crush',
+    link: 'https://amachkel.github.io/react-candy-crush/',
+    desc: 'A desktop version of Candy Crush build with React.',
+  },
 ]
 
 export default function Projects() {
@@ -80,9 +122,28 @@ export default function Projects() {
       <div className="carousel-zone">
         <div className="slider">
           <Slider {...settings}>
-            {images.map((img, i) => (
+            {images.map((obj, i) => (
               <div className={i === imageIndex ? 'slide activeSlide' : 'slide'}>
-                <img src={img} alt={'project'} />
+                <div
+                  className="slide-wrapper"
+                  style={{ backgroundImage: `url(${obj.image})` }}
+                >
+                  <a href={obj.link}>
+                    <FontAwesomeIcon
+                      className="link"
+                      icon={faDisplay}
+                      color="#4ef2eb"
+                    />
+                  </a>
+                  {/* <img src={obj.image} alt={'project'} /> */}
+                  <a href={obj.repo}>
+                    <FontAwesomeIcon
+                      className="repo"
+                      icon={faGithub}
+                      color="#4ef2eb"
+                    />
+                  </a>
+                </div>
               </div>
             ))}
           </Slider>
