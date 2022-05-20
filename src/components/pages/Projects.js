@@ -1,75 +1,20 @@
 import React, { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid'
 import '../../assets/styles/index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import Slider from 'react-slick'
-import candyCrush from '../../assets/thumbnails/candy-crush.png'
-import gaHikes from '../../assets/thumbnails/ga-hikes.png'
-import hardbackLife from '../../assets/thumbnails/hardback-life.png'
-import codeQuiz from '../../assets/thumbnails/code-quiz.png'
-import teamProfile from '../../assets/thumbnails/team-profile-generator.png'
-import techBlog from '../../assets/thumbnails/tech-blog.png'
-import weatherDashboard from '../../assets/thumbnails/weatherDashboard.png'
-import rockPaperScissors from '../../assets/thumbnails/rock-paper-scissors.png'
+import ReactTooltip from 'react-tooltip'
+import images from '../../imagesArray'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDisplay } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import {
   faCircleArrowDown,
   faCircleArrowUp,
-  faDisplay,
 } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-
-const images = [
-  {
-    image: candyCrush,
-    repo: 'https://github.com/amachkel/react-candy-crush',
-    link: 'https://amachkel.github.io/react-candy-crush/',
-    desc: 'A desktop version of Candy Crush build with React.',
-  },
-  {
-    image: gaHikes,
-    repo: 'https://github.com/amachkel/react-candy-crush',
-    link: 'https://amachkel.github.io/react-candy-crush/',
-    desc: 'A desktop version of Candy Crush build with React.',
-  },
-  {
-    image: hardbackLife,
-    repo: 'https://github.com/amachkel/react-candy-crush',
-    link: 'https://amachkel.github.io/react-candy-crush/',
-    desc: 'A desktop version of Candy Crush build with React.',
-  },
-  {
-    image: codeQuiz,
-    repo: 'https://github.com/amachkel/react-candy-crush',
-    link: 'https://amachkel.github.io/react-candy-crush/',
-    desc: 'A desktop version of Candy Crush build with React.',
-  },
-  {
-    image: teamProfile,
-    repo: 'https://github.com/amachkel/react-candy-crush',
-    link: 'https://amachkel.github.io/react-candy-crush/',
-    desc: 'A desktop version of Candy Crush build with React.',
-  },
-  {
-    image: techBlog,
-    repo: 'https://github.com/amachkel/react-candy-crush',
-    link: 'https://amachkel.github.io/react-candy-crush/',
-    desc: 'A desktop version of Candy Crush build with React.',
-  },
-  {
-    image: weatherDashboard,
-    repo: 'https://github.com/amachkel/react-candy-crush',
-    link: 'https://amachkel.github.io/react-candy-crush/',
-    desc: 'A desktop version of Candy Crush build with React.',
-  },
-  {
-    image: rockPaperScissors,
-    repo: 'https://github.com/amachkel/react-candy-crush',
-    link: 'https://amachkel.github.io/react-candy-crush/',
-    desc: 'A desktop version of Candy Crush build with React.',
-  },
-]
 
 export default function Projects() {
+  console.log(images)
   const [letterClass, setLetterClass] = useState('text-animate')
   const NextArrow = ({ onClick }) => {
     return (
@@ -102,10 +47,6 @@ export default function Projects() {
     vertical: true,
     verticalSwiping: true,
     swipeToSlide: true,
-    // autoplay: true,
-    // speed: 2000,
-    // autoplaySpeed: 2000,
-    // cssEase: 'linear',
     beforeChange: (current, next) => setImageIndex(next),
   }
   return (
@@ -123,20 +64,30 @@ export default function Projects() {
         <div className="slider">
           <Slider {...settings}>
             {images.map((obj, i) => (
-              <div className={i === imageIndex ? 'slide activeSlide' : 'slide'}>
+              <div
+                key={uuidv4()}
+                className={i === imageIndex ? 'slide activeSlide' : 'slide'}
+              >
+                {obj.className === 'slide activeSlide' ? (
+                  <a href="#" data-tip="React-tooltip">
+                    {' '}
+                    ◕‿‿◕{' '}
+                  </a>
+                ) : null}
+
+                <ReactTooltip place="bottom" type="info" effect="float" />
                 <div
                   className="slide-wrapper"
                   style={{ backgroundImage: `url(${obj.image})` }}
                 >
-                  <a href={obj.link}>
+                  <a href={obj.link} target="_blank" rel="noreferrer">
                     <FontAwesomeIcon
                       className="link"
                       icon={faDisplay}
                       color="#4ef2eb"
                     />
                   </a>
-                  {/* <img src={obj.image} alt={'project'} /> */}
-                  <a href={obj.repo}>
+                  <a href={obj.repo} target="_blank" rel="noreferrer">
                     <FontAwesomeIcon
                       className="repo"
                       icon={faGithub}

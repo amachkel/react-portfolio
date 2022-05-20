@@ -13,6 +13,7 @@ import {
   faUser,
   faEnvelope,
   faLaptopCode,
+  faFileArrowDown,
 } from '@fortawesome/free-solid-svg-icons'
 
 export default function Sidebar() {
@@ -51,6 +52,15 @@ export default function Sidebar() {
         </NavLink>
       </nav>
       <ul className="sidebar-list">
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="../assets/Alex Harkins Resume.pdf"
+          >
+            <FontAwesomeIcon icon={faFileArrowDown} color="#4d4d4e" />
+          </a>
+        </li>
         <li>
           <a
             target="_blank"

@@ -43,7 +43,14 @@
     }
 
     &:hover {
+      ::before {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px #324376;
+      }
       color: #324376;
+      color: #324376;
+      box-shadow: 0 0 5px #324376;
+      text-shadow: 0 0 5px #324376;
       svg {
         opacity: 0;
       }

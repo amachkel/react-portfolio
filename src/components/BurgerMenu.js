@@ -1,8 +1,10 @@
 import React from 'react'
 import '../assets/styles/index.scss'
+import '../assets/alex-harkins-resume.pdf'
 import { NavLink } from 'react-router-dom'
 // import Logo from '../assets/images/Alex-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
 import {
   faLinkedin,
   faGithub,
@@ -52,6 +54,17 @@ export default function BurgerMenu({ isOpen, setOpen }) {
               </NavLink>
             </nav>
             <ul className="burgerList">
+              <li>
+                <a
+                  className="svgLink"
+                  onClick={() => setOpen(!isOpen)}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="../assets/alex-harkins-resume.pdf"
+                >
+                  <FontAwesomeIcon icon={faFileArrowDown} color="#4d4d4e" />
+                </a>
+              </li>
               <li>
                 <a
                   className="svgLink"
