@@ -5,7 +5,7 @@ import codeQuiz from './assets/thumbnails/code-quiz-zoom.png'
 import teamProfile from './assets/thumbnails/team-profile-zoom.png'
 import techBlog from './assets/thumbnails/tech-hero.png'
 import weatherDashboard from './assets/thumbnails/weatherDashboard.png'
-import rockPaperScissors from './assets/thumbnails/choose.png'
+import rockPaperScissors from './assets/thumbnails/rock-paper-scissors.png'
 
 const images = [
   {
