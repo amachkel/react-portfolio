@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/styles/index.scss'
-import '../assets/alex-harkins-resume.pdf'
+import '../alex-harkins-resume.pdf'
 import { NavLink } from 'react-router-dom'
 // import Logo from '../assets/images/Alex-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -62,7 +62,7 @@ export default function BurgerMenu({ isOpen, setOpen }) {
                   rel="noreferrer"
                   href="../assets/alex-harkins-resume.pdf"
                 >
-                  <FontAwesomeIcon icon={faFileArrowDown} color="#4d4d4e" />
+                  <FontAwesomeIcon icon={faFileArrowDown} color="#fff" />
                 </a>
               </li>
               <li>

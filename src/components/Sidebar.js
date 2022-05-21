@@ -2,7 +2,10 @@ import React from 'react'
 import '../assets/styles/index.scss'
 import { Link, NavLink } from 'react-router-dom'
 import Logo from '../assets/images/Alex-logo.png'
+import resume from '../alex-harkins-resume.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+// import { saveAs } from 'file-saver'
 import {
   faLinkedin,
   faGithub,
@@ -53,11 +56,7 @@ export default function Sidebar() {
       </nav>
       <ul className="sidebar-list">
         <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="../assets/Alex Harkins Resume.pdf"
-          >
+          <a className="resume" target="_blank" rel="noreferrer" href={resume}>
             <FontAwesomeIcon icon={faFileArrowDown} color="#4d4d4e" />
           </a>
         </li>

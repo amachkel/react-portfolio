@@ -1,11 +1,11 @@
 import candyCrush from './assets/thumbnails/candy-crush.png'
-import gaHikes from './assets/thumbnails/ga-hikes.png'
-import hardbackLife from './assets/thumbnails/hardback-life.png'
-import codeQuiz from './assets/thumbnails/code-quiz.png'
-import teamProfile from './assets/thumbnails/team-profile-generator.png'
-import techBlog from './assets/thumbnails/tech-blog.png'
+import gaHikes from './assets/thumbnails/georgia-map.png'
+import hardbackLife from './assets/thumbnails/librarybackground.png'
+import codeQuiz from './assets/thumbnails/code-quiz-zoom.png'
+import teamProfile from './assets/thumbnails/team-profile-zoom.png'
+import techBlog from './assets/thumbnails/tech-hero.png'
 import weatherDashboard from './assets/thumbnails/weatherDashboard.png'
-import rockPaperScissors from './assets/thumbnails/rock-paper-scissors.png'
+import rockPaperScissors from './assets/thumbnails/choose.png'
 
 const images = [
   {
