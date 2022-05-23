@@ -24,7 +24,7 @@ export default function BurgerMenu({ isOpen, setOpen }) {
                 exact="true"
                 onClick={() => setOpen(!isOpen)}
                 className="navBurger"
-                to="/"
+                to="/react-portfolio/"
               >
                 HOME
               </NavLink>
@@ -32,7 +32,7 @@ export default function BurgerMenu({ isOpen, setOpen }) {
                 exact="true"
                 onClick={() => setOpen(!isOpen)}
                 className="about-link navBurger"
-                to="/about"
+                to="/react-portfolio/about"
               >
                 ABOUT
               </NavLink>
@@ -40,7 +40,7 @@ export default function BurgerMenu({ isOpen, setOpen }) {
                 exact="true"
                 onClick={() => setOpen(!isOpen)}
                 className="projects-link navBurger"
-                to="/projects"
+                to="/react-portfolio/projects"
               >
                 PROJECTS
               </NavLink>
@@ -48,7 +48,7 @@ export default function BurgerMenu({ isOpen, setOpen }) {
                 exact="true"
                 onClick={() => setOpen(!isOpen)}
                 className="contact-link navBurger"
-                to="/contact"
+                to="/react-portfolio/contact"
               >
                 CONTACT
               </NavLink>

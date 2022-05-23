@@ -54,7 +54,10 @@ export default function Home() {
             />
           </h1>
           <h2>Responsive Design / MERN Stack Developer / Woman In Tech</h2>
-          <Link to="/contact" className="flat-button responsive-button">
+          <Link
+            to="/react-portfolio/contact"
+            className="flat-button responsive-button"
+          >
             Let's get in touch!
           </Link>
         </div>
