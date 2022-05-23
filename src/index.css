@@ -6,6 +6,6 @@ body {
   margin: 0;
   color: white;
   background: black;
-  overflow: hidden;
   display: block;
+  overflow: hidden;
 }

@@ -1,58 +1,87 @@
-.container .projects-page {
-  justify-content: center;
+:root {
+  --cardWidth: 340px;
+  --cardHeight: 380px;
+  --cardMargin: 16px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+h1 {
+  font-size: 52px;
+  color: #4ef2eb;
+  font-weight: 400;
 }
 
-.img-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.img-wrapper > img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  object-position: center;
-}
-
-.img-wrapper > .content {
-  position: absolute;
-  inset: 0;
-  font-size: 2rem;
-  color: black;
-  padding: 1rem;
-  background: rgba(78, 242, 235, 0.4);
+.project.flex-zone {
+  width: 70vw;
+  height: 75vh;
+  // background-image: linear-gradient(#06d8fc, #83fde0);
+  margin-top: -5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.4s ease-in-out;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  padding: 2% 0;
+  padding: 5vh auto;
+  // border: 1px solid #06d8fc;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 0px #06d8fc;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.project.flex-zone::-webkit-scrollbar {
+  display: none;
+}
 
+.tile-wrapper {
+  width: var(--cardWidth);
+  height: var(--cardHeight);
+  margin: var(--cardMargin);
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: black;
+  background-color: white;
+  box-sizing: border-box;
+  overflow: hidden;
+  filter: brightness(1.3) invert(0.1) saturate(1.6) sepia(0.1);
+  opacity: 0.8;
+  transition: all 0.5s ease;
+
+  &:hover {
+    filter: none; /*changes image color on hover*/
+    opacity: 1;
+    transition: all 0.5s ease;
+    box-shadow: 4px 5px 15px #06d8fc;
+    transform: scale(1.01); /*looks like image is moving towards you*/
+  }
+  .img-wrapper img {
+    max-width: 100%;
+    min-height: 60%;
+    overflow: hidden;
+  }
+  .content {
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 40%;
+    padding: 15px;
+    background: rgb(255, 255, 255);
+  }
   svg {
-    font-size: 15px;
-    color: #475569;
+    font-size: 20px;
+    color: #324376;
     display: block;
-    line-height: 36px;
-    height: 36px;
+    line-height: 1.75em;
     position: relative;
     text-decoration: none;
-
     transition: 0.3s ease-in-out;
+    padding: 3px;
     &:hover {
-      ::before {
-        transform: scale(1.1);
-        box-shadow: 0 0 15px #324376;
-      }
       padding: 5px;
-
       color: #324376;
       border: 5px outset #324376;
-      box-shadow: 0 0 20px #324376;
-      text-shadow: 0 0 0 #324376;
+      box-shadow: 0 0 20px rgb(6, 216, 252);
     }
   }
 
@@ -68,36 +97,11 @@
   }
 }
 
-.img-wrapper:hover > img.blur.zoom {
-  transition: 0.3s ease-in-out;
-  filter: blur(5px);
-  transform: scale(1.1);
-}
-
-.img-wrapper:hover > .content.slide-left {
-  transform: translateX(0);
-}
-
-.img-wrapper > .content.slide-left {
-  transform: translateX(-100%);
-  display: flex;
-  flex-direction: column;
-}
-
 .project-text-zone {
   display: flex;
   width: 30vw;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 10%;
-}
-
-.grid-zone {
-  width: 100vw;
-  height: 70vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 5%;
+  margin-left: -10%;
 }

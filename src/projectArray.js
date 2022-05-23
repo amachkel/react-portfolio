@@ -6,16 +6,11 @@ import teamProfile from './assets/thumbnails/team-profile-zoom.png'
 import techBlog from './assets/thumbnails/tech-hero.png'
 import weatherDashboard from './assets/thumbnails/weatherDashboard.png'
 import rockPaperScissors from './assets/thumbnails/rock-paper-scissors.png'
+import { v4 as uuidv4 } from 'uuid'
 
 const images = [
   {
-    image: candyCrush,
-    name: 'Candy Crush',
-    repo: 'https://github.com/amachkel/react-candy-crush',
-    link: 'https://amachkel.github.io/react-candy-crush/',
-    desc: 'Built with React',
-  },
-  {
+    id: uuidv4(),
     image: gaHikes,
     name: 'GA Hikes',
     repo: 'https://github.com/amachkel/GA-hikes',
@@ -23,6 +18,7 @@ const images = [
     desc: 'Built with HTML, CSS, JavaScript, and Bootstrap',
   },
   {
+    id: uuidv4(),
     image: hardbackLife,
     name: "It's a Hardback Life",
     repo: 'https://github.com/amachkel/its_a_hardback_life_book_club',
@@ -30,6 +26,7 @@ const images = [
     desc: 'Built with HTML/CSS/JavaScript, MySQL, Express, Vue, Handlebars, Third Party APIs',
   },
   {
+    id: uuidv4(),
     image: codeQuiz,
     name: 'Code Quiz',
     repo: 'https://github.com/amachkel/code-quiz',
@@ -37,6 +34,7 @@ const images = [
     desc: 'Built with HTML, CSS, JavaScript, and Bootstrap',
   },
   {
+    id: uuidv4(),
     image: teamProfile,
     name: 'Team Profile',
     repo: 'https://github.com/amachkel/team-profile-generator',
@@ -44,6 +42,7 @@ const images = [
     desc: 'CLI app built with HTML/CSS/JavaScript, Bootstrap, jQuery, Node.js, tested with Jest',
   },
   {
+    id: uuidv4(),
     image: techBlog,
     name: 'Tech Blog',
     repo: 'https://github.com/amachkel/tech-blog',
@@ -51,6 +50,15 @@ const images = [
     desc: 'Built with HTML/CSS/JavaScript, Bulma, Node.js, MySQL, Sequelize, Express.js',
   },
   {
+    id: uuidv4(),
+    image: candyCrush,
+    name: 'Candy Crush',
+    repo: 'https://github.com/amachkel/react-candy-crush',
+    link: 'https://amachkel.github.io/react-candy-crush/',
+    desc: 'Desktop version of a popular game built with React',
+  },
+  {
+    id: uuidv4(),
     image: weatherDashboard,
     name: 'Weather Dashboard',
     repo: 'https://github.com/amachkel/weather-dashboard',
@@ -58,6 +66,7 @@ const images = [
     desc: 'Built with HTML/CSS/JavaScript, Bootstrap, OpenWeather API.',
   },
   {
+    id: uuidv4(),
     image: rockPaperScissors,
     name: 'Rock, Paper, Scissors',
     repo: 'https://github.com/amachkel/rock-paper-scissors',

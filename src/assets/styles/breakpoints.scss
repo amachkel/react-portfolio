@@ -76,6 +76,15 @@ $breakpoints: (
   }
 }
 
+.project.flex-zone {
+  @include xl {
+    width: 65vw;
+  }
+  @include xxs {
+    width: 50vw;
+  }
+}
+
 .responsive-logo {
   @include md {
     width: 120px;
@@ -85,7 +94,7 @@ $breakpoints: (
 
 .responsive-text {
   @include xs {
-    font-size: 24px;
+    font-size: 34px;
   }
   @include md {
     font-size: 54px;
@@ -98,27 +107,5 @@ $breakpoints: (
   }
   @include md {
     display: block;
-  }
-}
-
-.slide img {
-  @include md {
-    width: 40rem;
-  }
-}
-.carousel-zone {
-  // top height
-  @include md {
-    width: 50vw;
-    height: 90vh;
-    .slider {
-      width: 50vw;
-      height: 90vh;
-    }
-    //bottom height
-    .slick-list {
-      padding: 0px;
-      height: 80vh !important;
-    }
   }
 }

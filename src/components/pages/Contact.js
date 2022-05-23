@@ -39,6 +39,8 @@ export default function Contact() {
               index={15}
             />
           </h1>
+          <p>amachkel@gmail.com</p>
+          <p>404-213-0842</p>
         </div>
 
         <div className="contact-form">

@@ -1,10 +1,6 @@
 import React, { useState } from 'react'
-import { v4 as uuidv4 } from 'uuid'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDisplay } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import AnimatedLetters from '../AnimatedLetters'
-import images from '../../imagesArray'
+import ProjectTile from '../ProjectTile'
 import '../../assets/styles/index.scss'
 
 export default function Projects() {
@@ -20,30 +16,9 @@ export default function Projects() {
           />
         </h1>
       </div>
-      <div className="grid grid-zone">
-        {images.map((obj, i) => (
-          <div key={uuidv4()} className="img-wrapper">
-            <img className="blur zoom" src={obj.image} alt="project" />
-            <div className="content slide-left fade">
-              <h3>{obj.name}</h3>
-              <p>{obj.desc}</p>
-              <a href={obj.link} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon
-                  className="link"
-                  icon={faDisplay}
-                  color="#4ef2eb"
-                />
-              </a>
-              <a href={obj.repo} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon
-                  className="repo"
-                  icon={faGithub}
-                  color="#4ef2eb"
-                />
-              </a>
-            </div>
-          </div>
-        ))}
+
+      <div className="project flex-zone">
+        <ProjectTile />
       </div>
     </div>
   )
