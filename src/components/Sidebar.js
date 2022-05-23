@@ -22,18 +22,18 @@ import {
 export default function Sidebar() {
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/">
+      <Link className="logo" to="/react-portfolio/">
         <img src={Logo} alt="Alex logo" />
       </Link>
       <nav className="sidebar">
-        <NavLink exact="true" activateclassname="active" to="/">
+        <NavLink exact="true" activateclassname="active" to="/react-portfolio/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
         <NavLink
           exact="true"
           activateclassname="active"
           className="about-link"
-          to="/about"
+          to="/react-portfolio/about"
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
@@ -41,7 +41,7 @@ export default function Sidebar() {
           exact="true"
           activateclassname="active"
           className="projects-link"
-          to="/projects"
+          to="/react-portfolio/projects"
         >
           <FontAwesomeIcon icon={faLaptopCode} color="#4d4d4e" />
         </NavLink>
@@ -49,7 +49,7 @@ export default function Sidebar() {
           exact="true"
           activateclassname="active"
           className="contact-link"
-          to="/contact"
+          to="/react-portfolio/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
