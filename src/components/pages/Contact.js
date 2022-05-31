@@ -20,7 +20,7 @@ export default function Contact() {
       .then(
         () => {
           alert('Message successfully sent!')
-          window.location.reload(false)
+          window.location.reload(true)
         },
         () => {
           alert('Failed to send the message, please try again')
