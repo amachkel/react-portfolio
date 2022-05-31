@@ -6,6 +6,7 @@ import teamProfile from './assets/thumbnails/team-profile-zoom.png'
 import techBlog from './assets/thumbnails/tech-hero.png'
 import weatherDashboard from './assets/thumbnails/weatherDashboard.png'
 import rockPaperScissors from './assets/thumbnails/rock-paper-scissors.png'
+import livelyJams from './assets/thumbnails/lively-jams.png'
 import { v4 as uuidv4 } from 'uuid'
 
 const images = [
@@ -27,6 +28,22 @@ const images = [
   },
   {
     id: uuidv4(),
+    image: livelyJams,
+    name: 'Lively Jams',
+    repo: 'https://github.com/amachkel/lively-jams',
+    link: 'https://amachkel.github/io/lively-jams',
+    desc: 'Built with HTML/CSS/JavaScript, React, Spotify API',
+  },
+  {
+    id: uuidv4(),
+    image: techBlog,
+    name: 'Tech Blog',
+    repo: 'https://github.com/amachkel/tech-blog',
+    link: 'https://tech-blog-amkh.herokuapp.com/',
+    desc: 'Built with HTML/CSS/JavaScript, Bulma, Node.js, MySQL, Sequelize, Express.js',
+  },
+  {
+    id: uuidv4(),
     image: codeQuiz,
     name: 'Code Quiz',
     repo: 'https://github.com/amachkel/code-quiz',
@@ -40,14 +57,6 @@ const images = [
     repo: 'https://github.com/amachkel/team-profile-generator',
     link: 'https://github.com/amachkel/team-profile-generator',
     desc: 'CLI app built with HTML/CSS/JavaScript, Bootstrap, jQuery, Node.js, tested with Jest',
-  },
-  {
-    id: uuidv4(),
-    image: techBlog,
-    name: 'Tech Blog',
-    repo: 'https://github.com/amachkel/tech-blog',
-    link: 'https://tech-blog-amkh.herokuapp.com/',
-    desc: 'Built with HTML/CSS/JavaScript, Bulma, Node.js, MySQL, Sequelize, Express.js',
   },
   {
     id: uuidv4(),
