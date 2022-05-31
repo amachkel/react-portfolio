@@ -31,7 +31,7 @@ const images = [
     image: livelyJams,
     name: 'Lively Jams',
     repo: 'https://github.com/amachkel/lively-jams',
-    link: 'https://amachkel.github/io/lively-jams',
+    link: 'https://amachkel.github.io/lively-jams',
     desc: 'Built with HTML/CSS/JavaScript, React, Spotify API',
   },
   {
