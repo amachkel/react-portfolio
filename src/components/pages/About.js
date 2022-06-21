@@ -28,9 +28,9 @@ export default function About() {
           A full stack software engineer with a history in early childhood
           education, I enjoy using my communication and teaching skills to work
           collaboratively with my teammates and bring strong leadership
-          qualities to the table. In my projects, I utilize JavaScript, CSS, and
-          HTML with front end and back end technologies such as Node.js, MySql,
-          Handlebars, Bulma, and React. I have a lifetime love of learning and
+          qualities to the table. In my projects, I utilize JavaScript, CSS,
+          HTML, and React with front end and back end technologies including
+          Node.js, MySql, and MongoDB. I have a lifetime love of learning and
           sharing my knowledge with others.
         </p>
         <p>
