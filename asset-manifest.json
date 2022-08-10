@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.8f0920db.css",
-    "main.js": "/react-portfolio/static/js/main.15ad2654.js",
+    "main.js": "/react-portfolio/static/js/main.3898d46a.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/lively-jams.png": "/react-portfolio/static/media/lively-jams.4dc1906a6d6fc7b0fc2f.png",
     "static/media/georgia-map.png": "/react-portfolio/static/media/georgia-map.da663ad870e111d4ee8e.png",
     "static/media/librarybackground.png": "/react-portfolio/static/media/librarybackground.e97b57b6f082ac89645a.png",
+    "static/media/fake-site.png": "/react-portfolio/static/media/fake-site.6ce0053481f57f31956a.png",
     "static/media/tech-hero.png": "/react-portfolio/static/media/tech-hero.ebf79937e591c49587c9.png",
     "static/media/adventure-planner.png": "/react-portfolio/static/media/adventure-planner.7d60ad880cd3a9d7b0bc.png",
     "static/media/employeeTracker.png": "/react-portfolio/static/media/employeeTracker.2ebef0d799705eb7d160.png",
@@ -20,11 +21,11 @@
     "static/media/rock-paper-scissors.png": "/react-portfolio/static/media/rock-paper-scissors.b2939eb17fd09dfcab1a.png",
     "index.html": "/react-portfolio/index.html",
     "main.8f0920db.css.map": "/react-portfolio/static/css/main.8f0920db.css.map",
-    "main.15ad2654.js.map": "/react-portfolio/static/js/main.15ad2654.js.map",
+    "main.3898d46a.js.map": "/react-portfolio/static/js/main.3898d46a.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8f0920db.css",
-    "static/js/main.15ad2654.js"
+    "static/js/main.3898d46a.js"
   ]
 }
